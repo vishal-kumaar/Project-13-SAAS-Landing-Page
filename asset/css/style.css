@@ -57,6 +57,11 @@ nav {
     cursor: pointer;
 }
 
+.ham-burger {
+    width: 2rem;
+    display: none;
+}
+
 
 /* Main Sub Section */
 
@@ -234,4 +239,105 @@ nav {
     font-size: 14px;
     font-weight: 600;
     color: #000000;
+}
+
+@media screen and (max-width:1280px) {
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .logo {
+        width: 7rem;
+    }
+    .list {
+        display: none;
+    }
+    .ham-burger {
+        display: block;
+    }
+    .main-contents {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .main-content {
+        align-self: initial;
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .main-heading {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .main-para {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .service-section {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 5rem auto;
+    }
+    .service-contents {
+        margin-top: 3rem;
+        width: fit-content;
+    }
+    .features-section {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .main-contents img {
+        width: 100%;
+    }
+    .service-section img {
+        width: 100%;
+    }
+    .service-contents h1 {
+        font-size: 28px;
+    }
+    .service-contents h2 {
+        font-size: 22px;
+    }
+    .service-content p {
+        font-size: 12px;
+        margin-left: 1px;
+    }
+    .features-section h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        padding-bottom: 4rem;
+    }
+    .logo {
+        width: 5rem;
+        height: 1.8rem;
+    }
+    .ham-burger {
+        width: 1.5rem;
+    }
+    .main-heading {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .main-para {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .feature {
+        width: inherit;
+    }
 }
